@@ -1,0 +1,86 @@
+2019-12-04 12:21:19,912 INFO  [log] Test Automation of getting address by id and delte address by id
+2019-12-04 12:21:20,662 INFO  [log] id in the respone : 242
+2019-12-04 12:21:20,684 INFO  [log] Request is <soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:def="http://soap.upskills.in/soap/default?services=customerCustomerRepositoryV1">
+   <soap:Header/>
+   <soap:Body>
+      <def:customerCustomerRepositoryV1SaveRequest>
+         <customer>
+          
+                  
+                  <email>User200.5@gmail.com</email>
+                  <firstname>Omar1</firstname>
+                  <lastname>Farooqui</lastname>
+                  <dob>1984-05-06</dob>
+                  <addresses>
+                     <item>
+                        <region>
+                           <regionCode>KA</regionCode>
+                           <region>Karnataka</region>
+                        </region>
+                        <countryId>IN</countryId>
+                        <street>
+                           <item>#1063, 1 st Main Road</item>
+                        </street>
+                        <telephone>+91 9886947769</telephone>
+                        <postcode>560045</postcode>
+                        <city>Bengaluru</city>
+                        <firstname>Omar</firstname>
+                        <lastname>Farooqui</lastname>
+                        <defaultShipping>true</defaultShipping>
+                        <defaultBilling>true</defaultBilling>
+                     </item>
+                  </addresses>  
+         </customer>
+        
+      </def:customerCustomerRepositoryV1SaveRequest>
+   </soap:Body>
+</soap:Envelope>
+2019-12-04 12:21:20,777 INFO  [log] Response is <env:Envelope xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:ns1="http://soap.upskills.in/soap/default?services=customerCustomerRepositoryV1">
+   <env:Body>
+      <ns1:customerCustomerRepositoryV1SaveResponse>
+         <result>
+            <id>411</id>
+            <groupId>1</groupId>
+            <defaultBilling>242</defaultBilling>
+            <defaultShipping>242</defaultShipping>
+            <createdAt>2019-12-04 06:51:11</createdAt>
+            <updatedAt>2019-12-04 06:51:11</updatedAt>
+            <createdIn>Default Store View</createdIn>
+            <dob>1984-05-06</dob>
+            <email>User539.5@gmail.com</email>
+            <firstname>Omar1</firstname>
+            <lastname>Farooqui</lastname>
+            <storeId>1</storeId>
+            <websiteId>1</websiteId>
+            <addresses>
+               <item>
+                  <id>242</id>
+                  <customerId>411</customerId>
+                  <region>
+                     <regionCode>Karnataka</regionCode>
+                     <region>Karnataka</region>
+                     <regionId>0</regionId>
+                  </region>
+                  <regionId>0</regionId>
+                  <countryId>IN</countryId>
+                  <street>
+                     <item>#1063, 1 st Main Road</item>
+                  </street>
+                  <telephone>+91 9886947769</telephone>
+                  <postcode>560045</postcode>
+                  <city>Bengaluru</city>
+                  <firstname>Omar</firstname>
+                  <lastname>Farooqui</lastname>
+                  <defaultShipping>true</defaultShipping>
+                  <defaultBilling>true</defaultBilling>
+               </item>
+            </addresses>
+            <disableAutoGroupChange>0</disableAutoGroupChange>
+            <extensionAttributes>
+               <isSubscribed>false</isSubscribed>
+            </extensionAttributes>
+         </result>
+      </ns1:customerCustomerRepositoryV1SaveResponse>
+   </env:Body>
+</env:Envelope>
+2019-12-04 12:21:20,863 INFO  [log] ******** End of Test Case Logs :  **********
